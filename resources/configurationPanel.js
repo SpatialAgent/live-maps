@@ -23,7 +23,8 @@
       "type": "color",
       "fieldName": "color",
       "label": "Color",
-      "tooltip": "Color"
+      "tooltip": "Color",
+      "sharedThemeProperty": "header.background"
     }]
   }, {
     "category": "<b>Live Feed</b>",
@@ -75,7 +76,7 @@
     }]
   }],
   "values": {
-    "title": "",
+    "title": "LIVE MAP",
     "subtitle": "",
     "color": "#2cbade",
     "feed": "flu",

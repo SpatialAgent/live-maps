@@ -313,7 +313,7 @@ define([
         var params = new ProjectParameters();
         params.geometries = [pt, pt1, pt2];
         params.outSR = new SpatialReference(4326);
-        var gsvc = new GeometryService(this.config.helperServices.geometry);
+        var gsvc = new GeometryService(this.config.helperServices.geometry.url);
         gsvc.project(params, function(results){
           ptLL = results[0];
           pt1LL = results[1];
@@ -344,7 +344,8 @@ define([
       //dom.byId("panelContent").innerHTML = "<br/><br/><img src='images/loading.gif'/>";
       var url = this.config.feedUrl;
       url += "?feed=" + this.config.feed;
-      url += "&keyword=" + this.config.keyword;
+      //url += "&keyword=" + this.config.keyword;
+      url += "&keyword=" + encodeURIComponent(this.config.keyword);
       if (this.config.feed === "flickr") {
         url += "&bbox=" + this.bbox;
       } else {
