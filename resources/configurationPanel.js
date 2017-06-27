@@ -1,13 +1,10 @@
 {
   "configurationSettings": [{
-    "category": "<b>Map</b>",
+    "category": "<b>General</b>",
     "fields": [{
       "type": "webmap",
       "label": "Select a map"
-    }]
-  }, {
-    "category": "<b>General</b>",
-    "fields": [{
+    },{
       "type": "string",
       "fieldName": "title",
       "label": "Title",
@@ -19,6 +16,12 @@
       "label": "Subtitle",
       "tooltip": "Subtitle",
       "placeHolder": "Subtitle"
+    }]
+  }, {
+    "category": "<b>Theme</b>",
+    "fields": [{
+      "type": "subcategory",
+      "label": "Colors"
     }, {
       "type": "color",
       "fieldName": "color",
@@ -34,19 +37,18 @@
       "label": "Feed",
       "tooltip": "Feed",
       "options": [{
-            "label": "Cold and Flu",
-            "value": "flu"
-        }, {
-            "label": "Gastrointestinal Illness",
-            "value": "gastro"
-        }, {
-            "label": "Flickr",
-            "value": "flickr"
-        }, {
-            "label": "Twitter",
-            "value": "twitter"
-        }
-      ]
+        "label": "Cold and Flu",
+        "value": "flu"
+      }, {
+        "label": "Gastrointestinal Illness",
+        "value": "gastro"
+      }, {
+        "label": "Flickr",
+        "value": "flickr"
+      }, {
+        "label": "Twitter",
+        "value": "twitter"
+      }]
     }, {
       "type": "string",
       "fieldName": "keyword",
@@ -60,7 +62,7 @@
       "tooltip": "Interval between record change (minutes)",
       "constraints": {
         "min": 0.5,
-        "max": 5.0,
+        "max": 5,
         "places": 1
       }
     }, {

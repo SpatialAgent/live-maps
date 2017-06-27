@@ -114,7 +114,7 @@ define([
       var rgb = Color.fromString(this.options.color).toRgb();
       var yiq = ((rgb[0] * 299) + (rgb[1] * 587) + (rgb[2] * 114)) / 1000;
       if (yiq <= 120) {
-        console.log("YIQ", yiq);
+        //console.log("YIQ", yiq);
         return "#ffffff";
       } else {
         return this.options.color;
@@ -230,7 +230,7 @@ define([
         this._unselectCards();
         domClass.add(id, "selected");
         var feature = this.layer.graphics[index];
-        console.log(feature);
+        //console.log(feature);
         this.emit("card-clicked", {
           data: feature
         });
