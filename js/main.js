@@ -146,8 +146,8 @@ define([
         bingMapsKey: this.config.bingKey
       }).then(lang.hitch(this, function (response) {
         this.map = response.map;
-        //console.log("My Map:", this.map);
-        //console.log("My Config:", this.config);
+        console.log("My Map:", this.map);
+        console.log("My Config:", this.config);
         this._initApp();
         return response;
       }), this.reportError);
@@ -351,7 +351,7 @@ define([
       } else {
         url += "&lat=" + this.lat + "&lon=" + this.lon + "&radius=" + this.radius;
       }
-      //console.log("Url", url);
+      console.log("Url", url);
       var def = esriRequest({
         url: url
         //callbackParamName: "callback"
