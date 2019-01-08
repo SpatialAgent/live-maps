@@ -154,6 +154,8 @@
 }
 
 circle[data-count="1"] {
+    -webkit-transform-box: fill-box;
+    transform-box: fill-box;
     -webkit-transform-origin: center;
     -moz-transform-origin: center;
     -ms-transform-origin: center;
@@ -171,6 +173,8 @@ circle[data-count="1"] {
 }
 
 circle[data-count="2"] {
+    -webkit-transform-box: fill-box;
+    transform-box: fill-box;
     -webkit-transform-origin: center;
     -moz-transform-origin: center;
     -ms-transform-origin: center;
