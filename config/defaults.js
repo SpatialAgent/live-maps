@@ -36,7 +36,7 @@ define({
   "color": "#2cbade",
   "title": "LIVE MAP",
   "subtitle": "",
-  "feedUrl": location.protocol + "//" + "live.esri.com/LiveMaps/feed.php",
+  "feedUrl": location.protocol + "//" + "coolmaps.esri.com/LiveMaps/feed.php",
   "feed": "flu",
   "keyword": "",
   "interval": 0.5, //minutes
